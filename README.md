@@ -1,6 +1,6 @@
 # MyTravellingSalesman
 
-This was a university project which explored the implication of modifying the parameters on the fitness level of final solutions generated using an evolutionary algorithm. The key problem here explored was the [Travelling Saleman Problem](https://en.wikipedia.org/wiki/Travelling_salesman_problem). The results of the statistical testing, evaluation of the peformance of the evolutionary algorithm and conclusions gathered are all outlined in the PDF report.
+This was a university project which explored the implication of modifying the parameters on the fitness level of final solutions generated using an evolutionary algorithm. The key problem here explored was the [Travelling Salesman Problem](https://en.wikipedia.org/wiki/Travelling_salesman_problem). The results of the statistical testing, evaluation of the peformance of the evolutionary algorithm and conclusions gathered are all outlined in the PDF report.
 
 
 ## Built With
