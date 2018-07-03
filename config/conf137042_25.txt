@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><configuration>
+  <module class="org.opt4j.core.common.logger.LoggerModule">
+    <property name="filename">outputs/output137042_25.tsv</property>
+    <property name="loggingPerEvaluation">false</property>
+    <property name="evaluationStep">100</property>
+    <property name="loggingPerIteration">true</property>
+    <property name="iterationStep">1</property>
+  </module>
+  <module class="org.opt4j.core.common.random.RandomModule">
+    <property name="type">MERSENNE_TWISTER</property>
+    <property name="usingSeed">true</property>
+    <property name="seed">25</property>
+  </module>
+  <module class="org.opt4j.operators.crossover.BasicCrossoverModule">
+    <property name="booleanType">RATE</property>
+    <property name="booleanRate">0.5</property>
+    <property name="booleanXPoints">1</property>
+    <property name="doubleType">SBX</property>
+    <property name="alpha">0.5</property>
+    <property name="nu">15.0</property>
+    <property name="integerType">RATE</property>
+    <property name="integerRate">0.5</property>
+    <property name="integerXPoints">1</property>
+    <property name="permutationType">ONEPOINT</property>
+    <property name="rotation">false</property>
+  </module>
+  <module class="org.opt4j.operators.mutate.BasicMutateModule">
+    <property name="doubleType">POLYNOMIAL</property>
+    <property name="eta">20.0</property>
+    <property name="sigma">0.1</property>
+    <property name="mutationRateType">CONSTANT</property>
+    <property name="mutationRate">0.001</property>
+    <property name="permutationType">SWAP</property>
+  </module>
+  <module class="org.opt4j.optimizers.ea.BasicMatingModule">
+    <property name="type">DEFAULT</property>
+  </module>
+  <module class="org.opt4j.optimizers.ea.ElitismSelectorModule"/>
+  <module class="org.opt4j.optimizers.ea.EvolutionaryAlgorithmModule">
+    <property name="generations">1000</property>
+    <property name="alpha">137</property>
+    <property name="mu">137</property>
+    <property name="lambda">137</property>
+    <property name="crossoverRate">0.42</property>
+  </module>
+  <module class="org.opt4j.tutorial.salesman.SalesmanFixedSeedModule">
+    <property name="size">300</property>
+  </module>
+</configuration>
